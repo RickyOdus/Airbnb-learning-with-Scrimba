@@ -1,13 +1,85 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.body{
+    @apply bg-neutral-50 m-0
+    } 
+
+.logo { @apply p-8 shadow-md
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.jointimages{
+    @apply pt-10 flex justify-center h-96
+}
+
+
+.midtext{
+    @apply text-5xl font-black pt-12 font-opensans pl-10 text-center sm:text-start
+}
+
+.subtext{
+    @apply text-xl font-opensans pl-10 font-normal pt-4 text-center sm:text-start tracking-wider
+}
+
+.imagestogether{
+    @apply flex flex-col items-center mt-10 ml-10 text-lg 
+    sm:flex sm:flex-row sm:justify-between sm:ml-10
+    md:flex md:flex-row md:justify-between 
+    md:mx-2 md:ml-10 md:mx-0
+}
+
+.one{
+    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80
+}
+
+.two{
+    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80 ml-2
+}
+
+.three{
+    @apply h-96 sm:w-52 md:w-52 md:h-80 lg:w-80 ml-3
+}
+
+.oneflex{
+    @apply relative
+}
+
+.twoflex{
+    @apply relative
+}
+
+.soldout {
+    @apply uppercase font-bold absolute py-1 px-3 bg-white mt-2 ml-2 rounded hover:text-red-500
+}
+.online {
+    @apply uppercase font-bold absolute py-1 px-3 bg-white mt-2 ml-4 rounded hover:text-green-500
+}
+
+.star-flex{
+    @apply flex flex-row pt-1.5
+}
+
+.faStar{
+    @apply pt-1 mr-1.5
+}
+
+.title {
+    @apply text-xl tracking-normal font-normal pb-14
+}
+
+.title-three{
+    @apply text-xl tracking-normal font-normal pb-14 pl-2.5
+}
+
+.star-flex-three{
+    @apply  flex flex-row pt-1.5 pl-2.5
+}
+
+.title-two{
+    @apply text-xl tracking-normal font-normal pb-14 pl-2.5
+}
+
+.star-flex-two{
+    @apply  flex flex-row pt-1.5 pl-2.5
 }
