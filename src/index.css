@@ -6,6 +6,8 @@
     @apply bg-neutral-50 m-0
     } 
 
+
+    /* NAVBAR */
 .logo { @apply p-8 shadow-md
 }
 
@@ -13,7 +15,7 @@
     @apply pt-10 flex justify-center h-96
 }
 
-
+/* MIDDLE */
 .midtext{
     @apply text-5xl font-black pt-12 font-opensans pl-10 text-center sm:text-start
 }
@@ -22,6 +24,8 @@
     @apply text-xl font-opensans pl-10 font-normal pt-4 text-center sm:text-start tracking-wider
 }
 
+
+/* Responsive bottom: contains the Online and Sold out images */
 .imagestogether{
     @apply flex flex-col items-center mt-10 ml-10 text-lg 
     sm:flex sm:flex-row sm:justify-between sm:ml-10
