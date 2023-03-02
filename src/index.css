@@ -12,7 +12,7 @@
 }
 
 .jointimages{
-    @apply pt-10 flex justify-center h-96
+    @apply pt-10 flex justify-center h-96 sm:w-full w-full sm:px-0 sm:pb-0 p-8
 }
 
 /* MIDDLE */
