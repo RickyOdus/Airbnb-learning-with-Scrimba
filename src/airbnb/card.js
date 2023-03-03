@@ -6,9 +6,8 @@ import mountain from "../images/mountain-bike 1.png"
 
 
 
-export default function Bottom(){
+export default function Card(){
     return <div>
-
 <div className='imagestogether'>
 <div className='oneflex'>
 <p className='soldout'>sold out</p>

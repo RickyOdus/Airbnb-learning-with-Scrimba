@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from './airbnb/navbar';
 import Hero from './airbnb/middle';
-import Bottom from './airbnb/bottom';
+import Card from './airbnb/card';
 
 export default function App() { 
    return (
@@ -9,7 +9,7 @@ export default function App() {
       <div>
        <Navbar/>
        <Hero/>
-       <Bottom/>
+       <Card/>
     </div>
     </div>  
    )
