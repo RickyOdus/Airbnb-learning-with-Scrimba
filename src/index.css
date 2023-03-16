@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.*{
+    @apply box-border
+}
+
 .body{
     @apply bg-neutral-50 m-0
     } 
-
 
     /* NAVBAR */
 .logo { @apply p-8 shadow-md
@@ -27,35 +31,31 @@
 
 /* Responsive bottom: contains the Online and Sold out images */
 .imagestogether{
-    @apply flex flex-col items-center mt-10 ml-10 text-lg 
-    sm:flex sm:flex-row sm:justify-between sm:ml-10
-    md:flex md:flex-row md:justify-between 
-    md:mx-2 md:ml-10 md:mx-0
+    @apply flex flex-col items-center mt-10 text-lg 
+    sm:flex sm:flex-row sm:justify-between sm:ml-5
+    md:flex md:flex-row md:justify-between md:ml-5
 }
 
 .one{
-    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80
+    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80 mr-1 md:mr-5
 }
 
 .two{
-    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80 ml-2
+    @apply h-96 sm:w-52 md:w-64 md:h-80 lg:w-80 ml-2 md:mr-3 md:ml-1
 }
 
 .three{
-    @apply h-96 sm:w-52 md:w-52 md:h-80 lg:w-80 ml-3
+    @apply h-96 sm:w-52 md:w-52 md:h-80 lg:w-80 ml-2
 }
 
 .oneflex{
     @apply relative
 }
 
-.twoflex{
-    @apply relative
-}
-
 .soldout {
     @apply uppercase font-bold absolute py-1 px-3 bg-white mt-2 ml-2 rounded hover:text-red-500 cursor-default
 }
+
 .online {
     @apply uppercase font-bold absolute py-1 px-3 bg-white mt-2 ml-4 rounded hover:text-green-500 cursor-default
 }
